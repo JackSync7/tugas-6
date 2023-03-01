@@ -1,0 +1,62 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Contact-ME</title>
+       <link rel="stylesheet" href="assets/css/style-contact.css" >
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" /> 
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="nav-left">
+                <ul>
+                    <li><img src="assets/images/brandred.png" alt=""></li>
+                    <li class="home" ><a href="index.html"> Home</a></li>
+                    <li class="project" ><a href="myProject.html"><b> My Project</b></a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a class="contact-btn" href="contactme.html">Contact Me</a>
+            </div>
+            <div class="hamburger-icon">
+                <button id="bars-menu" onclick="showHamburger()">
+                    <i class="fa-2xl fa-solid fa-bars"></i>
+                </button>
+            </div>
+            
+        </div>
+        <div class="hamburger-nav-container" id="nav-container">
+            <a href="index.html" style="padding-top: 7px; " class="humberger-active-home">Home</a><br>
+            <a href="myProject.html" class="humberger-active-blog">My Project</a><br>
+            <a href="contactme.html" class="humberger-active-contact">Contact</a><br>
+            <a href="testimony.html" class="humberger-active-contact">Testimony</a><br>
+        </div>
+            <div>
+                <h1 class="title">GET IN TOUCH</h1>
+            </div>
+        <form action="" onsubmit="getData2(event)">
+            <div>
+                <label for="title">title </label>
+                <input type="text" id="title" required> 
+            </div>
+            <div>
+                <label for="content">Content</label>
+                <textarea id="content" required></textarea>
+            </div>
+            <div>
+                <label for="image">Image</label>
+                <input type="file" id="image" required>
+            </div>
+            <div class="submit">
+                <button type="submit">submit here</button>
+            </div>
+
+        </form>
+        <div id="contents"></div>
+        
+    </body>
+    <script src="assets/script/blog.js"></script>
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/hamburger.js"></script>
+</html>

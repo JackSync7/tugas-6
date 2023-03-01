@@ -1,0 +1,74 @@
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" /> 
+        <title>Contact-ME</title>
+       <link rel="stylesheet" href="assets/css/style-contact.css" >
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="nav-left">
+                <ul>
+                    <li><img src="assets/images/brandred.png" alt=""></li>
+                    <li class="home" ><a href="index.html"> Home</a></li>
+                    <li class="project" ><a href="myProject.html"> My Project</a></li>
+                    <li class="home" ><a href="testimony.html"> Testimony</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a class="contact-btn" href="contactme.html">Contact Me</a>
+            </div>
+            <div class="hamburger-icon">
+                <button id="bars-menu" onclick="showHamburger()">
+                    <i class="fa-2xl fa-solid fa-bars"></i>
+                </button>
+            </div>
+            
+        </div>
+         <div class="hamburger-nav-container" id="nav-container">
+            <a href="index.html" style="padding-top: 7px; " class="humberger-active-home">Home</a><br>
+            <a href="blog.html" class="humberger-active-blog">Blog</a><br>
+            <a href="contactme.html" class="humberger-active-contact">Contact</a><br>
+            <a href="testimony.html" class="humberger-active-contact">Testimony</a><br>
+        </div>
+            <div>
+                <h1 class="title">GET IN TOUCH</h1>
+            </div>
+        <form action="">
+            <div>
+                <label for="name">Name </label>
+                <input type="text" id="name"> 
+            </div>
+            <div>
+                <label for="email"> Email</label>
+                <input type="text" id="email"> 
+            </div>
+            <div>
+                <label for="phone"> Phone Number</label>
+                <input type="text" id="phone"> 
+            </div>
+            <div>
+                <label for="subject">Subject</label>
+                 <select id="subject">
+                    <option disabled selected></option>
+                     <option >Collaboration</option>
+                     <option >Disscusion</option>
+                     <option >Hiring</option>
+                 </select>
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <textarea id="address"></textarea>
+            </div>
+            <div class="submit">
+                <button type="button" onclick="getData()">submit here</button>
+            </div>
+
+        </form>
+        
+    </body>
+    <script src="assets/script/script.js">
+    </script>
+    <script src="assets/script/hamburger.js"></script>
+</html>
